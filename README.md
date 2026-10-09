@@ -25,30 +25,21 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The purpose of the game was for the player to guess the secret number using the hints to guess correctly. The player had a limited number of attempts, and the game's hints told the player whether their guess was too high or too low. The game also tracked the player's score and displayed it at the end, regardless of whether they won or lost.
+- There were three major bugs that I found while testing the game. The first bug was that the hints were pointing me in the wrong direction. For example, when the secret number was 54 and I guessed 1, the hint would tell me to guess lower instead of higher. The second major bug was that regardless of whether I won or lost, the New Game button would not work. The last bug was that the game would display a prompt revealing the secret number while the player still had one attempt left.
+-I used Claude and Copilot to help find and fix the bugs. The hint was corrected so that the hints pointed the player in the right direction. The game status was found to be the reason the New Game button was not working. This was then fixed so that the button worked regardless of whether the player won or lost. I reviewed the code and manually tested the game to make sure the fixes worked correctly. After making those changes, I ran py -m pytest -v in my terminal to check the automated tests.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. The player automatically starts a new game where they have to guess a secret number while having a limited number of attempts.
+2. The secret number is 78, and the player guesses 42. The game gives a hint telling the player to guess higher.
+3. The player then guesses 79, and the game responds with a hint telling the player to guess lower.
+4. The player guesses the correct number, 78, and the game responds with a message stating that they won.
+5. The game displays the player's final score.
+6. The player can then click the New Game button, allowing them to start another game and replay as many times as they want.
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
-## 🧪 Test Results
 
-```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
 
-## 🚀 Stretch Features
-
-- [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]

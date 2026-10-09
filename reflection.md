@@ -49,12 +49,18 @@ Claude updated the starter tests to check the hint message. It also helped by gi
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+Streamlit reruns work by running the entire Python script whenever the player interacts with a button. Session state allows Streamlit to remember important information, such as the score, remaining attempts, secret number, and game status (win or loss).
+While Streamlit reruns the script, session state remembers all the important information. Without session state, the code would forget everything and could start a new game every time the player interacted with something.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+I really want to continue using Claude and Git together to make sure that the AI-generated code is correct. Being able to stay in control of the code being corrected, while having another AI review the changes and verifying everything myself, made the entire process extremely efficient.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+I would ask Claude and Copilot to review each other's answers to get more information about how I could improve the code. Rather than just comparing the code from both AI assistants myself, I would have them review each other's suggestions. I think this would give me more insight into the code, and if I disagreed with their suggestions, I could still decide what changes I wanted to make.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+I have always wanted to avoid using AI for coding because AI can make a lot of mistakes. However, having a process where I review the code myself while another AI assistant also checks it made everything much easier and more efficient.
